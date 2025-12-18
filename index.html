@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asia Cup 2025: Match-Level Dataset & EDA</title>
+  <meta name="description" content="Asia Cup 2025: A Structured T20 Match-Level Dataset and Exploratory Analysis">
+  <meta name="keywords" content="textual inversion, text-to-image, diffusion models, personalization, deep learning">
+<!--
+
+  <meta property="og:title" content="Directional Textual Inversion">
+  <meta property="og:description" content="Directional Textual Inversion for Personalized Text-to-Image Generation">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kunheek.github.io/dti"> 
+   -->
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <!-- KaTeX for equations -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false}
+      ]
+    });"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="title">Asia Cup 2025: A Structured T20 <br>Match-Level Dataset and Exploratory Analysis</h1>
+
+      <div class="authors">
+        <span class="author"><a href="https://orcid.org/0009-0007-5298-4469" target="_blank">Kousar Raza</a><sup>1</sup></span>
+        <span class="author"><a  target="_blank">Faizan Ali</a><sup>2</sup></span>
+        
+      </div>
+
+      <div class="affiliations">
+        <span class="affiliation"><sup>1</sup>University of Isfahan,Isfahan, Iran.</span>
+        <span class="affiliation"><sup>2</sup>University of Sindh,Jamshoro,Pakistan.</span>
+      
+      </div>
+
+      <div class="venue">
+        <!-- UPDATED -->
+        <span>preprint 2025</span>
+      </div>
+
+      <div class="links">
+      <!-- UPDATED links -->
+<a href="https://arxiv.org/abs/2512.13672" class="btn" title="Paper"><i class="ai ai-arxiv"></i> arXiv</a>
+<a href="https://github.com/kousarraza/AsiaCup2025" class="btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+<a href="https://doi.org/10.5281/zenodo.17228056" class="btn" target="_blank"><i class="ai ai-zenodo"> Dataset</i></a>
+    <!-- Zenodo SVG icon -->
+</a>
+
+</a>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Teaser -->
+
+  <!-- Abstract -->
+  <section class="section abstract">
+    <div class="container">
+      <h2 class="section-title">Abstract</h2>
+      <!-- UPDATED with paper-accurate abstract -->
+      <p class="abstract-text">
+         This project presents a structured and comprehensive dataset of the <strong>2025 Asia Cup T20 T20</strong>cricket tournament,
+          covering all 19 matches with 61 variables including team scores, wickets, powerplay statistics, 
+          boundary counts, toss decisions, venues, and player-specific highlights. We perform extensive exploratory data analysis (EDA) 
+          using multiple visualizations to highlight team performance, top players, and match dynamics. The dataset and analysis 
+         code are released publicly for reproducible cricket analytics, predictive modeling, and strategic research.
+      </p>
+    </div>
+  </section>
+
+  <!-- Method -->
+  <section class="section method">
+    <div class="container">
+      <h2 class="section-title">Introduction</h2>
+
+        <!-- UPDATED caption -->
+        <p>
+          Cricket analytics increasingly relies on detailed datasets to support statistical analysis,
+           machine learning models, and strategic insights. The Asia Cup 2025 T20 tournament provides a high-pressure,
+            competitive context for studying player and team performance in short-format cricket. 
+          This work compiles and analyzes match-level data to support open, reproducible research.
+        </p>
+</div>
+</section>
+<section class="section method">
+<div class="container">
+  <h2 class="section-title">Importance of the Project</h2>
+  <p> High-quality, openly accessible datasets for international tournaments remain scarce. 
+        By providing match-level data with comprehensive exploratory analysis, this project enables researchers, analysts, 
+          and enthusiasts to uncover patterns in team strategy, player contributions, scoring dynamics, and more.</p>
+</div>
+</section>
+    
+        
+  <section class="section method">
+    <div class="container">
+      <h2 class="section-title">Methodology</h2>
+<p>Data was collected from official match scorecards and compiled into a structured CSV format. Exploratory Data Analysis was performed using Python (Pandas, NumPy, Matplotlib, Seaborn). Statistical analysis included descriptive statistics, 
+  correlation analysis, and trend analysis across tournament stages.</p>
+       </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section gallery">
+    <div class="container">
+      <h2 class="section-title" style="text-align: center;">Exploratory Data Analysis (EDA)</h2>
+
+       <div class="section-description">
+    <p>We conducted comprehensive exploratory data analysis with 22 different visualizations. Below are the key insights:</p>
+  </div>
+   <h3>1. Team Performance Analysis</h3>
+  <div class="chart-grid">
+    <div class="chart-item">
+      <div class="image-title">Matches Won by Each Team</div>
+      <div class="image-container">
+        <img src="assets\gallery\1_wins_by_team.png" alt="Matches Won by Team">
+      </div>
+      <p><em>India led with the most wins, followed by Pakistan and Bangladesh</em></p>
+    </div>
+    
+    <div class="chart-item">
+      <div class="image-title">Win Distribution Among Teams</div>
+      <div class="image-container">
+        <img src="assets/gallery/2_win_distribution.png" alt="Win Distribution">
+      </div>
+      <p><em>Pie chart showing proportional wins across all teams</em></p>
+    </div>
+
+    <div class="chart-item">
+      <div class="image-title">Wins vs Losses Comparison</div>
+      <div class="image-container">
+        <img src="assets/gallery/3_wins_vs_losses.png" alt="Wins vs Losses">
+      </div>
+      <p><em>Side-by-side comparison of wins and losses for each team</em></p>
+    </div>
+  </div>
+  <h3>2. Batting Analysis - Boundaries</h3>
+  <div class="chart-grid">
+    <div class="chart-item">
+      <div class="image-title">Total Sixes Hit by Each Team</div>
+      <div class="image-container">
+        <img src="assets/gallery/4_total_sixes_by_team.png" alt="Sixes by Team">
+      </div>
+      <p><em>India hit the most sixes, followed by Sri Lanka</em></p>
+    </div>
+
+      <div class="chart-item">
+      <div class="image-title">Total Boundaries (Fours & Sixes)</div>
+      <div class="image-container">
+        <img src="assets/gallery/5_total_boundaries_by_team.png" alt="Boundaries by Team">
+      </div>
+      <p><em>Stacked bar chart showing fours and sixes distribution</em></p>
+    </div>
+     <div class="chart-item">
+      <div class="image-title">Fours vs Sixes Relationship</div>
+      <div class="image-container">
+        <img src="assets/gallery/6_fours_vs_sixes_scatter.png" alt="Fours vs Sixes">
+      </div>
+      <p><em>Scatter plot showing correlation between fours and sixes</em></p>
+    </div>
+  </div>
+
+  <h3>3. Bowling Analysis</h3>
+  <div class="chart-grid">
+    <div class="chart-item">
+      <div class="image-title">Wickets Taken by Each Team</div>
+      <div class="image-container">
+        <img src="assets/gallery/7_wickets_by_team.png" alt="Wickets by Team">
+      </div>
+      <p><em>India and Pakistan took the most wickets</em></p>
+    </div>
+
+    <div class="chart-item">
+      <div class="image-title">Top Player of Match Awards</div>
+      <div class="image-container">
+        <img src="assets/gallery/8_top_player_of_match.png" alt="Player of Match">
+      </div>
+      <p><em>Kuldeep Yadav and Abhishek Sharma received multiple awards</em></p>
+    </div>
+
+     <div class="chart-item">
+      <div class="image-title">Total Runs Scored by Teams</div>
+      <div class="image-container">
+        <img src="assets/gallery/9_total_runs_by_team.png" alt="Runs by Team">
+      </div>
+      <p><em>India scored the most total runs in the tournament</em></p>
+    </div>
+  </div>
+
+<h3>4. Scoring Analysis</h3>
+  <div class="chart-grid">
+    <div class="chart-item">
+      <div class="image-title">Highest Scores by Team</div>
+      <div class="image-container">
+        <img src="assets/gallery/10_highest_score_by_team.png" alt="Highest Scores">
+      </div>
+      <p><em>India achieved the highest team total (202 runs)</em></p>
+    </div>
+
+      
+    <div class="chart-item">
+      <div class="image-title">Win Type Distribution</div>
+      <div class="image-container">
+        <img src="assets/gallery/11_win_type_distribution.png" alt="Win Types">
+      </div>
+      <p><em>Most matches were won by runs, followed by wickets</em></p>
+    </div>
+
+     
+    <div class="chart-item">
+      <div class="image-title">Win Margin Distribution</div>
+      <div class="image-container">
+        <img src="assets/gallery/12_win_margin_distribution.png" alt="Win Margins">
+      </div>
+      <p><em>Histogram showing frequency of different win margins</em></p>
+    </div>
+  </div>
+
+  <h3>5. Toss and Venue Analysis</h3>
+  <div class="chart-grid">
+    <div class="chart-item">
+      <div class="image-title">Toss Decision Distribution</div>
+      <div class="image-container">
+        <img src="assets/gallery/13_toss_decision_donut.png" alt="Toss Decisions">
+      </div>
+      <p><em>Most teams chose to bowl first after winning toss</em></p>
+    </div>
+
+     <div class="chart-item">
+      <div class="image-title">Toss Winner vs Match Winner</div>
+      <div class="image-container">
+        <img src="assets/gallery/14_toss_impact.png" alt="Toss Impact">
+      </div>
+      <p><em>Toss winners won approximately 50% of matches</em></p>
+    </div>
+
+    <div class="chart-item">
+      <div class="image-title">Matches by Venue</div>
+      <div class="image-container">
+        <img src="assets/gallery/15_matches_by_venue.png" alt="Matches by Venue">
+      </div>
+      <p><em>Dubai hosted the most matches, followed by Abu Dhabi</em></p>
+    </div>
+  </div>
+
+  <h3>6. Temporal Analysis</h3>
+  <div class="chart-grid">
+    <div class="chart-item">
+      <div class="image-title">Matches by Day of Week</div>
+      <div class="image-container">
+        <img src="assets/gallery/16_matches_by_day.png" alt="Matches by Day">
+      </div>
+      <p><em>Most matches played on weekdays</em></p>
+    </div>
+    
+    <div class="chart-item">
+      <div class="image-title">Matches by Tournament Stage</div>
+      <div class="image-container">
+        <img src="assets/gallery/17_matches_by_stage.png" alt="Tournament Stages">
+      </div>
+      <p><em>Group stage had most matches, followed by Super Fours</em></p>
+    </div>
+    
+    <div class="chart-item">
+      <div class="image-title">Boundaries Trend Over Tournament</div>
+      <div class="image-container">
+        <img src="assets/gallery/18_boundaries_trend.png" alt="Boundaries Trend">
+      </div>
+      <p><em>Boundary hitting increased in knockout stages</em></p>
+    </div>
+  </div>
+
+  <h3>7. Comprehensive Team Analysis</h3>
+  <div class="chart-grid">
+    <div class="chart-item">
+      <div class="image-title">Team Performance Heatmap</div>
+      <div class="image-container">
+        <img src="assets/gallery/19_team_performance_heatmap.png" alt="Team Heatmap">
+      </div>
+      <p><em>Heatmap showing normalized team performance across metrics</em></p>
+    </div>
+    
+    <div class="chart-item">
+      <div class="image-title">Top Teams Performance Comparison</div>
+      <div class="image-container">
+        <img src="assets/gallery/20_top_teams_comparison.png" alt="Top Teams Comparison">
+      </div>
+      <p><em>Grouped bar chart comparing top 5 teams across metrics</em></p>
+    </div>
+    
+    <div class="chart-item">
+      <div class="image-title">Final Match: India vs Pakistan</div>
+      <div class="image-container">
+        <img src="assets/gallery/21_final_match_comparison.png" alt="Final Match">
+      </div>
+      <p><em>Dual-axis comparison of runs scored and wickets lost</em></p>
+    </div>
+  </div>
+
+  <h3>8. Individual Player Analysis</h3>
+  <div class="chart-grid">
+    <div class="chart-item">
+      <div class="image-title">Top Player of Match Awards</div>
+      <div class="image-container">
+        <img src="assets/gallery/22_top_player_awards.png" alt="Player Awards">
+      </div>
+      <p><em>Bar chart showing players with most awards</em></p>
+    </div>
+  </div>
+</section>
+    
+ <section class="section method">
+    <div class="container">
+      <h2 class="section-title">Key Findings</h2>
+  <ul>
+    <li><strong>India Dominance:</strong> India won the most matches (6) and scored the highest total (202 runs)</li>
+    <li><strong>Power Hitting:</strong> India hit the most sixes (84) and boundaries (180+)</li>
+    <li><strong>Bowling Strength:</strong> Pakistan took the most wickets (87) in the tournament</li>
+    <li><strong>Toss Impact:</strong> Teams winning toss chose to bowl 68% of times, with 53% success rate</li>
+    <li><strong>Venue Effect:</strong> Dubai International Stadium hosted 11 matches with higher average scores</li>
+    <li><strong>Player Excellence:</strong> Kuldeep Yadav (India) received 3 Player of Match awards</li>
+    <li><strong>Tournament Progression:</strong> Boundary hitting increased by 22% in knockout stages</li>
+  </ul>
+</section>
+
+
+<section class="section method">
+    <div class="container">
+  <h2 class="section-title">Applications</h2>
+  <p style="text-align: left;">
+    This dataset enables multiple research applications:
+  </p>
+  <ul>
+    <li><strong>Predictive Modeling:</strong> Match outcome prediction using machine learning</li>
+    <li><strong>Player Performance Analysis:</strong> Identify key performance indicators</li>
+    <li><strong>Strategic Insights:</strong> Analyze toss decisions and batting/bowling strategies</li>
+    <li><strong>Comparative Studies:</strong> Compare team performance across tournaments</li>
+    <li><strong>Educational Use:</strong> Teaching data science with sports analytics</li>
+  </ul>
+  </div>
+</section>
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Citation -->
+  <section class="section citation">
+    <div class="container">
+      <h2 class="section-title">Citation</h2>
+      <p>If you find our work useful, please cite:</p>
+      <div class="bibtex-container">
+        <button class="copy-btn" onclick="copyBibtex()"><i class="fas fa-copy"></i> Copy</button>
+        <pre class="bibtex">
+<code>@article{kousarraza2025asiacup2025,
+  title={ Asia Cup 2025: A Structured T20 Match-Level Dataset and Exploratory Analysis for Cricket Analytics},
+  author={Kousar Raza, Faizan Ali},
+  journal={arXiv preprint arXiv:2512.13672},
+  year={2025}
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Kousar Raza, Faizan Ali. All rights reserved.</p>
+      <p class="template-credit">Website template inspired by <a href="https://nerfies.github.io"
+          target="_blank">Nerfies</a>.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
