@@ -138,45 +138,6 @@ cd Pakistan-T20I-Tri-Series--2025
 # Install required packages
 pip install -r requirements.txt
 
----
-
-## 🖼️ Visualization Gallery
-
-<p align="center">
-  <img src="docs/assets/gallery/1_wins_by_team.png" width="45%" alt="Wins by Team">
-  <img src="docs/assets/gallery/3_wins_vs_losses.png" width="45%" alt="Wins vs Losses">
-  <br>
-  <em>Team performance and win-loss analysis</em>
-</p>
-
-<p align="center">
-  <img src="docs/assets/gallery/4_total_sixes_by_team.png" width="45%" alt="Sixes by Team">
-  <img src="docs/assets/gallery/5_total_boundaries_by_team.png" width="45%" alt="Boundaries by Team">
-  <br>
-  <em>Batting analysis across teams</em>
-</p>
-
-<p align="center">
-  <img src="docs/assets/gallery/7_wickets_by_team.png" width="45%" alt="Wickets by Team">
-  <img src="docs/assets/gallery/8_top_player_of_match.png" width="45%" alt="Player of Match">
-  <br>
-  <em>Bowling performance and individual awards</em>
-</p>
-
-**View the full interactive report [here](https://kousarraza.github.io/AsiaCup2025/)**
-
----
-
-## 🚀 Quick Start
-
-### Installation
-```bash
-# Clone the repository
-git clone https://github.com/kousarraza/AsiaCup2025.git
-cd AsiaCup2025
-
-# Install required packages
-pip install pandas numpy matplotlib seaborn jupyter
 ```
 
 ---
