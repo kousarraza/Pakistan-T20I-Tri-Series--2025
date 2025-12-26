@@ -311,6 +311,10 @@ a:hover {
     text-align: center;
 }
 
+.image-title {
+    color: red;
+
+}
 .gallery-item img {
     width: 100%;
     aspect-ratio: 1;
@@ -390,6 +394,14 @@ a:hover {
 .ablation-item {
     text-align: center;
 }
+
+.blue-center {
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+}
+
+
 
 .ablation-item img {
     width: 100%;

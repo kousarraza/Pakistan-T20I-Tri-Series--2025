@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Asia Cup 2025: Match-Level Dataset & EDA</title>
-  <meta name="description" content="Asia Cup 2025: A Structured T20 Match-Level Dataset and Exploratory Analysis">
+  <title>Pakistan T20I Tri-Series 2025 :Match-Level Dataset & EDA</title>
+  <meta name="description" content="Pakistan T20I Tri-Series 2025: A Complete Match-Level Dataset for Cricket Analytics">
   <meta name="keywords" content="textual inversion, text-to-image, diffusion models, personalization, deep learning">
 <!--
 
@@ -44,7 +44,7 @@
   <!-- Header -->
   <header class="header">
     <div class="container">
-      <h1 class="title">Asia Cup 2025: A Structured T20 <br>Match-Level Dataset and Exploratory Analysis</h1>
+      <h1 class="title">Pakistan T20I Tri-Series 2025: A Complete <br> Match-Level Dataset for Cricket Analytics</h1>
 
       <div class="authors">
         <span class="author"><a href="https://orcid.org/0009-0007-5298-4469" target="_blank">Kousar Raza</a><sup>1</sup></span>
@@ -66,8 +66,8 @@
       <div class="links">
       <!-- UPDATED links -->
 <a href="https://arxiv.org/abs/2512.13672" class="btn" title="Paper"><i class="ai ai-arxiv"></i> arXiv</a>
-<a href="https://github.com/kousarraza/AsiaCup2025" class="btn" target="_blank"><i class="fab fa-github"></i> Code</a>
-<a href="https://doi.org/10.5281/zenodo.17228056" class="btn" target="_blank"><i class="ai ai-zenodo"> Dataset</i></a>
+<a href="https://github.com/kousarraza/Pakistan-T20I-Tri-Series--2025" class="btn" target="_blank"><i class="fab fa-github"></i> Code</a>
+<a href="https://doi.org/10.5281/zenodo.17981582" class="btn" target="_blank"><i class="ai ai-zenodo"> Dataset</i></a>
     <!-- Zenodo SVG icon -->
 </a>
 
@@ -85,11 +85,11 @@
       <h2 class="section-title">Abstract</h2>
       <!-- UPDATED with paper-accurate abstract -->
       <p class="abstract-text">
-         This project presents a structured and comprehensive dataset of the <strong>2025 Asia Cup T20 T20</strong>cricket tournament,
-          covering all 19 matches with 61 variables including team scores, wickets, powerplay statistics, 
-          boundary counts, toss decisions, venues, and player-specific highlights. We perform extensive exploratory data analysis (EDA) 
-          using multiple visualizations to highlight team performance, top players, and match dynamics. The dataset and analysis 
-         code are released publicly for reproducible cricket analytics, predictive modeling, and strategic research.
+          Cricket analytics has started receiving significant interest with the advent of structured sports data; 
+          this is because publicly available and reusable datasets representing international-level 
+          cricket tournaments are limited in nature. In this article, a comprehensive match-level dataset for the <strong>Pakistan T20I Tri-Series 2025 </strong>
+          representing all the matches played during the series is presented. This dataset consists of comprehensive information regarding the match details, performance of both the teams, summary of scores, results of the toss, and the outcome of the match in a clean and well-formatted CSV layout with the
+           sole purpose of facilitating reproducible research work in the field of cricket analytics.
       </p>
     </div>
   </section>
@@ -101,19 +101,21 @@
 
         <!-- UPDATED caption -->
         <p>
-          Cricket analytics increasingly relies on detailed datasets to support statistical analysis,
-           machine learning models, and strategic insights. The Asia Cup 2025 T20 tournament provides a high-pressure,
-            competitive context for studying player and team performance in short-format cricket. 
-          This work compiles and analyzes match-level data to support open, reproducible research.
+          The application of data-driven methods to sports analytics has grown rapidly in recent years, 
+          particularly in cricket, where match outcomes are influenced by complex interactions among teams, 
+          players, conditions, and strategies. Despite this growth, 
+          access to well-structured, openly available datasets for international cricket tournaments remains limited, 
+          often restricting reproducibility and comparative analysis.
+
         </p>
 </div>
 </section>
 <section class="section method">
 <div class="container">
   <h2 class="section-title">Importance of the Project</h2>
-  <p> High-quality, openly accessible datasets for international tournaments remain scarce. 
-        By providing match-level data with comprehensive exploratory analysis, this project enables researchers, analysts, 
-          and enthusiasts to uncover patterns in team strategy, player contributions, scoring dynamics, and more.</p>
+  <p> To address this gap, we present a complete and structured dataset for the Pakistan T20I Tri-Series 2025.
+     The dataset captures match-level information across the entire tournament and is designed to be immediately usable for exploratory analysis, 
+    statistical modeling, and machine learning tasks.</p>
 </div>
 </section>
     
@@ -126,228 +128,220 @@
        </div>
   </section>
 
+  
+
   <!-- Gallery -->
   <section class="section gallery">
     <div class="container">
       <h2 class="section-title" style="text-align: center;">Exploratory Data Analysis (EDA)</h2>
 
        <div class="section-description">
-    <p>We conducted comprehensive exploratory data analysis with 22 different visualizations. Below are the key insights:</p>
+    <p>We conducted comprehensive exploratory data analysis with 24 different visualizations. Below are the key insights:</p>
   </div>
-   <h3>1. Team Performance Analysis</h3>
+  <section class="section method">
+  <div class="container">
+    <h2 class="section-title">Dataset Overview & Metadata</h2>
+    <p>
+      These visualizations describe the structure and composition of the dataset,
+      including column metadata, variable categories, and dataset summaries.
+      They provide a clear understanding of the dataset’s scope, granularity,
+      and suitability for cricket analytics and modeling tasks.
+    </p>
+  </div>
+</section>
+<section class="section gallery" id="dataset-meta">
+  <div class="container">
+    <h2>1. Dataset Overview & Metadata</h2>
+
+    <div class="chart-grid">
+      <div class="chart-item">
+        <div class="image-title"><h3>1.1. Column Metadata</h3></div>
+        <img src="assets/gallery/column_metadata.jpg">
+        <p class="blue-center"><em>Overview of all dataset variables and their descriptions</em></p>
+      </div>
+      <br>
+      <div class="chart-item">
+        <div class="image-title"><h3>1.2. Dataset Summary</h3></div>
+        <img src="assets/gallery/dataset_metadata_summary.jpg"> 
+        <p class="blue-center"><em>High-level summary of matches, teams, and variables</em></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+   <h3>2. Team Performance Analysis</h3>
   <div class="chart-grid">
     <div class="chart-item">
-      <div class="image-title">Matches Won by Each Team</div>
+      <div class="image-title"><h3>2.1. Matches Won by Each Team</h3></div>
       <div class="image-container">
-        <img src="assets\gallery\1_wins_by_team.png" alt="Matches Won by Team">
+        <img src="assets/gallery/most_wins_by_team.jpg" alt="Matches Won by Team">
       </div>
-      <p><em>India led with the most wins, followed by Pakistan and Bangladesh</em></p>
+      <p class="blue-center"><em>Pakistan led with the most wins, followed by Srilanka and Zimbabwe</em></p>
     </div>
-    
+    <br> 
     <div class="chart-item">
-      <div class="image-title">Win Distribution Among Teams</div>
+      <div class="image-title"><h3>2.2. Most Wins Among Teams</h3></div>
       <div class="image-container">
-        <img src="assets/gallery/2_win_distribution.png" alt="Win Distribution">
+        <img src="assets/gallery/team_wins_pie.jpg" alt="Win Distribution">
       </div>
-      <p><em>Pie chart showing proportional wins across all teams</em></p>
+      <p class="blue-center"><em>Pie chart showing proportional wins across all teams</em></p>
     </div>
+    <br>
+    <div class="chart-item">
+      <div class="image-title"><h3>2.3. Wins vs Losses Comparison</h3></div>
+      <div class="image-container">
+        <img src="assets/gallery/team_comparison.jpg" alt="Wins vs Losses">
+      </div>
+      <p class="blue-center"><em>Side-by-side comparison of wins and losses for each team</em></p>
+    </div>
+    <br>
 
     <div class="chart-item">
-      <div class="image-title">Wins vs Losses Comparison</div>
+      <div class="image-title"><h3>2.4. Toss Decision Distribution</h3></div>
       <div class="image-container">
-        <img src="assets/gallery/3_wins_vs_losses.png" alt="Wins vs Losses">
+        <img src="assets/gallery/toss_decision_distribution.jpg" alt="Wins vs Losses">
       </div>
-      <p><em>Side-by-side comparison of wins and losses for each team</em></p>
-    </div>
-  </div>
-  <h3>2. Batting Analysis - Boundaries</h3>
-  <div class="chart-grid">
-    <div class="chart-item">
-      <div class="image-title">Total Sixes Hit by Each Team</div>
-      <div class="image-container">
-        <img src="assets/gallery/4_total_sixes_by_team.png" alt="Sixes by Team">
-      </div>
-      <p><em>India hit the most sixes, followed by Sri Lanka</em></p>
+      <p class="blue-center"><em>Toss Decision Distribution</em></p>
     </div>
 
       <div class="chart-item">
-      <div class="image-title">Total Boundaries (Fours & Sixes)</div>
+      <div class="image-title"><h3>2.5. Highest Team Score</h3></div>
       <div class="image-container">
-        <img src="assets/gallery/5_total_boundaries_by_team.png" alt="Boundaries by Team">
+        <img src="assets/gallery/highest_team_score.jpg" alt="Wins vs Losses">
       </div>
-      <p><em>Stacked bar chart showing fours and sixes distribution</em></p>
-    </div>
-     <div class="chart-item">
-      <div class="image-title">Fours vs Sixes Relationship</div>
-      <div class="image-container">
-        <img src="assets/gallery/6_fours_vs_sixes_scatter.png" alt="Fours vs Sixes">
-      </div>
-      <p><em>Scatter plot showing correlation between fours and sixes</em></p>
-    </div>
-  </div>
-
-  <h3>3. Bowling Analysis</h3>
-  <div class="chart-grid">
-    <div class="chart-item">
-      <div class="image-title">Wickets Taken by Each Team</div>
-      <div class="image-container">
-        <img src="assets/gallery/7_wickets_by_team.png" alt="Wickets by Team">
-      </div>
-      <p><em>India and Pakistan took the most wickets</em></p>
-    </div>
-
-    <div class="chart-item">
-      <div class="image-title">Top Player of Match Awards</div>
-      <div class="image-container">
-        <img src="assets/gallery/8_top_player_of_match.png" alt="Player of Match">
-      </div>
-      <p><em>Kuldeep Yadav and Abhishek Sharma received multiple awards</em></p>
+      <p class="blue-center"><em>Highest Team Score</em></p>
     </div>
 
      <div class="chart-item">
-      <div class="image-title">Total Runs Scored by Teams</div>
+      <div class="image-title"><h3>2.6. Toss Impact</h3></div>
       <div class="image-container">
-        <img src="assets/gallery/9_total_runs_by_team.png" alt="Runs by Team">
+        <img src="assets/gallery/toss_impact_bar.jpg" alt="Wins vs Losses">
       </div>
-      <p><em>India scored the most total runs in the tournament</em></p>
+      <p class="blue-center"><em>Toss Impact</em></p>
+    </div>
+<br>
+
+    <div class="chart-item">
+      <div class="image-title"><h3>2.7.Total Runs by Team</h3></div>
+      <div class="image-container">
+        <img src="assets/gallery/team_runs_line.jpg" alt="Wins vs Losses">
+      </div>
+      <p class="blue-center"><em>Total Runs by Team</em></p>
     </div>
   </div>
 
-<h3>4. Scoring Analysis</h3>
+  <h3>3. Boundaries Analysis </h3>
   <div class="chart-grid">
+
     <div class="chart-item">
-      <div class="image-title">Highest Scores by Team</div>
+      <div class="image-title"><h3>3.1. Total Sixes Hit by Each Team</h3></div>
       <div class="image-container">
-        <img src="assets/gallery/10_highest_score_by_team.png" alt="Highest Scores">
+        <img src="assets/gallery/team_sixes_bar.jpg" alt="Sixes by Team">
       </div>
-      <p><em>India achieved the highest team total (202 runs)</em></p>
+      <p class="blue-center"><em>Pakistan hit the most sixes, followed by Sri Lanka</em></p>
     </div>
 
-      
-    <div class="chart-item">
-      <div class="image-title">Win Type Distribution</div>
+     <div class="chart-item">
+      <div class="image-title"><h3>3.2. Total Fours Hit by Each Team</h3></div>
       <div class="image-container">
-        <img src="assets/gallery/11_win_type_distribution.png" alt="Win Types">
+        <img src="assets/gallery/most_fours_team.jpg" alt="Sixes by Team">
       </div>
-      <p><em>Most matches were won by runs, followed by wickets</em></p>
+      <p class="blue-center"><em>Zimbabwe hit the most fours, followed by Pakistan</em></p>
+    </div>
+
+<br>
+
+
+  <h3>4.🏏Batting & Bowling Analysis</h3>
+  <div class="chart-grid">
+    <div class="chart-item">
+      <div class="image-title"><h3>4.1. Individual Batting Performance</h3></div>
+      <div class="image-container">
+        <img src="assets/gallery/top_runs_bar.jpg" alt="Wickets by Team">
+      </div>
+      <p class="blue-center"><em>Most Runs by Player </em></p>
+    </div>
+
+    <div class="chart-item">
+      <div class="image-title"><h3>4.2. Most 30+ Scores</h3></div>
+      <div class="image-container">
+        <img src="assets/gallery/thirty_plus_bar.jpg" alt="Wickets by Team">
+      </div>
+      <p class="blue-center"><em>Players with consistent 30+ run contributions </em></p>
+    </div>
+
+       <div class="chart-item">
+      <div class="image-title"><h3>4.3. Top Player of Match Awards</h3></div>
+      <div class="image-container">
+        <img src="assets/gallery/potm_awards_bar.jpg" alt="Wickets by Team">
+      </div>
+      <p class="blue-center"><em>Players with the highest number of awards </em></p>
+    </div>
+
+    <div class="chart-item">
+      <div class="image-title"><h3>4.4. Top Wicket Takers</h3></div>
+      <div class="image-container">
+        <img src="assets/gallery/most_top_wicket_taker.jpg" alt="Wickets by Team">
+      </div>
+      <p class="blue-center"><em>Players with the highest number of wickets </em></p>
+    </div>
+
+    <div class="chart-item">
+      <div class="image-title"><h3>4.5. Player Dashboard</h3></div>
+      <div class="image-container">
+        <img src="assets/gallery/player_dashboard.jpg" alt="Wickets by Team">
+      </div>
+      <p class="blue-center"><em>Player Dashboard </em></p>
+    </div>
+
+  </div>
+<br>
+<h3>5. Extras Analysis</h3>
+  <div class="chart-grid">
+   <div class="chart-item">
+      <div class="image-title"><h3>5.1. Extra Runs by Team</h3></div>
+      <div class="image-container">
+        <img src="assets/gallery/most_extras_team.jpg" alt="Wickets by Team">
+      </div>
+      <p class="blue-center"><em>Players with the highest number of awards </em></p>
     </div>
 
      
-    <div class="chart-item">
-      <div class="image-title">Win Margin Distribution</div>
-      <div class="image-container">
-        <img src="assets/gallery/12_win_margin_distribution.png" alt="Win Margins">
-      </div>
-      <p><em>Histogram showing frequency of different win margins</em></p>
-    </div>
-  </div>
-
-  <h3>5. Toss and Venue Analysis</h3>
+    <br>
+    <h3>6.⚡ Powerplay Analysis</h3>
   <div class="chart-grid">
-    <div class="chart-item">
-      <div class="image-title">Toss Decision Distribution</div>
+   <div class="chart-item">
+      <div class="image-title"><h3>6.1. Powerplay & Run-Scoring Patterns</h3></div>
       <div class="image-container">
-        <img src="assets/gallery/13_toss_decision_donut.png" alt="Toss Decisions">
+        <img src="assets/gallery/highest_powerplay.jpg" alt="Wickets by Team">
       </div>
-      <p><em>Most teams chose to bowl first after winning toss</em></p>
+      <p class="blue-center"><em>Top powerplay scores achieved by teams </em></p>
     </div>
+<br>
 
-     <div class="chart-item">
-      <div class="image-title">Toss Winner vs Match Winner</div>
-      <div class="image-container">
-        <img src="assets/gallery/14_toss_impact.png" alt="Toss Impact">
-      </div>
-      <p><em>Toss winners won approximately 50% of matches</em></p>
-    </div>
-
-    <div class="chart-item">
-      <div class="image-title">Matches by Venue</div>
-      <div class="image-container">
-        <img src="assets/gallery/15_matches_by_venue.png" alt="Matches by Venue">
-      </div>
-      <p><em>Dubai hosted the most matches, followed by Abu Dhabi</em></p>
-    </div>
-  </div>
-
-  <h3>6. Temporal Analysis</h3>
+<h3>7. Most Time Allout Team</h3>
   <div class="chart-grid">
-    <div class="chart-item">
-      <div class="image-title">Matches by Day of Week</div>
+   <div class="chart-item">
+      <div class="image-title"><h3>7.1. Team allout most time</h3></div>
       <div class="image-container">
-        <img src="assets/gallery/16_matches_by_day.png" alt="Matches by Day">
+        <img src="assets/gallery/team_allout_most.jpg" alt="Wickets by Team">
       </div>
-      <p><em>Most matches played on weekdays</em></p>
+      <p class="blue-center"><em>Teams allout most time </em></p>
     </div>
-    
-    <div class="chart-item">
-      <div class="image-title">Matches by Tournament Stage</div>
-      <div class="image-container">
-        <img src="assets/gallery/17_matches_by_stage.png" alt="Tournament Stages">
-      </div>
-      <p><em>Group stage had most matches, followed by Super Fours</em></p>
-    </div>
-    
-    <div class="chart-item">
-      <div class="image-title">Boundaries Trend Over Tournament</div>
-      <div class="image-container">
-        <img src="assets/gallery/18_boundaries_trend.png" alt="Boundaries Trend">
-      </div>
-      <p><em>Boundary hitting increased in knockout stages</em></p>
-    </div>
-  </div>
 
-  <h3>7. Comprehensive Team Analysis</h3>
-  <div class="chart-grid">
-    <div class="chart-item">
-      <div class="image-title">Team Performance Heatmap</div>
-      <div class="image-container">
-        <img src="assets/gallery/19_team_performance_heatmap.png" alt="Team Heatmap">
-      </div>
-      <p><em>Heatmap showing normalized team performance across metrics</em></p>
-    </div>
-    
-    <div class="chart-item">
-      <div class="image-title">Top Teams Performance Comparison</div>
-      <div class="image-container">
-        <img src="assets/gallery/20_top_teams_comparison.png" alt="Top Teams Comparison">
-      </div>
-      <p><em>Grouped bar chart comparing top 5 teams across metrics</em></p>
-    </div>
-    
-    <div class="chart-item">
-      <div class="image-title">Final Match: India vs Pakistan</div>
-      <div class="image-container">
-        <img src="assets/gallery/21_final_match_comparison.png" alt="Final Match">
-      </div>
-      <p><em>Dual-axis comparison of runs scored and wickets lost</em></p>
-    </div>
-  </div>
+<br>
 
-  <h3>8. Individual Player Analysis</h3>
+<h3>8. Most  Time Appearance Umpries </h3>
   <div class="chart-grid">
-    <div class="chart-item">
-      <div class="image-title">Top Player of Match Awards</div>
+   <div class="chart-item">
+      <div class="image-title"><h3>8.1. Umpire Appearance Most Time</h3></div>
       <div class="image-container">
-        <img src="assets/gallery/22_top_player_awards.png" alt="Player Awards">
+        <img src="assets/gallery/most_umpire_appearances.jpg" alt="Wickets by Team">
       </div>
-      <p><em>Bar chart showing players with most awards</em></p>
+      <p class="blue-center"><em>Umpire Appearance Most Time </em></p>
     </div>
-  </div>
-</section>
-    
- <section class="section method">
-    <div class="container">
-      <h2 class="section-title">Key Findings</h2>
-  <ul>
-    <li><strong>India Dominance:</strong> India won the most matches (6) and scored the highest total (202 runs)</li>
-    <li><strong>Power Hitting:</strong> India hit the most sixes (84) and boundaries (180+)</li>
-    <li><strong>Bowling Strength:</strong> Pakistan took the most wickets (87) in the tournament</li>
-    <li><strong>Toss Impact:</strong> Teams winning toss chose to bowl 68% of times, with 53% success rate</li>
-    <li><strong>Venue Effect:</strong> Dubai International Stadium hosted 11 matches with higher average scores</li>
-    <li><strong>Player Excellence:</strong> Kuldeep Yadav (India) received 3 Player of Match awards</li>
-    <li><strong>Tournament Progression:</strong> Boundary hitting increased by 22% in knockout stages</li>
-  </ul>
-</section>
+
+    <
 
 
 <section class="section method">
@@ -382,8 +376,8 @@
       <div class="bibtex-container">
         <button class="copy-btn" onclick="copyBibtex()"><i class="fas fa-copy"></i> Copy</button>
         <pre class="bibtex">
-<code>@article{kousarraza2025asiacup2025,
-  title={ Asia Cup 2025: A Structured T20 Match-Level Dataset and Exploratory Analysis for Cricket Analytics},
+<code>@article{kousarraza2025Pakistan-T20I-Tri-Series--2025,
+  title={Pakistan T20I Tri-Series 2025: A Complete Match-Level Dataset for Cricket Analytics},
   author={Kousar Raza, Faizan Ali},
   journal={arXiv preprint arXiv:2512.13672},
   year={2025}
