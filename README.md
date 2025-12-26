@@ -154,7 +154,7 @@ dti/
 ----
 ```bibtex
 @article{kousarraza2025asiacup2025,
-  title={ Asia Cup 2025: A Structured T20 Match-Level Dataset and Exploratory Analysis for Cricket Analytics},
+  title={ Pakistan T20I Tri-Series 2025: Comprehensive Dataset & Exploratory Analysis},
   author={Kousar Raza, Faizan Ali},
   journal={arXiv preprint arXiv:2512.13672},
   year={2025}
